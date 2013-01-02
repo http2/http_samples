@@ -24,29 +24,23 @@ There are an absurd number of caveats to understand when using these traces.
  * They are a snapshot of how a few Web sites operated at a given time, for 
    a given user
 
-
-Using The Sample
-----------------
-
-Eventually, we will have tools to take these files as input and produce a
-stream of information that can be used to compare different approaches to
-problems such as header compression.
-
-Adding To The Sample
---------------------
+Contributing
+------------
 
 If you'd like to add more traces to the sample, please fork this repository,
-add a directory with your samples, and make a pull request. Regular
-contributors will be added as repository owners to streamline this process.
+add a directory with your samples (using your github user name for the
+directory name), and make a pull request. 
 
 When contributing, remember to:
   * Turn off as much other software that generates HTTP requests as possible, 
     to limit noise
-  * Remove cookies and other PII-containing tokens, or use a "fresh" browser
+  * Remove cookies and other PII-containing tokens, or (preferably) use a
+    "fresh" browser
   * Do a sanity check on the traces to assure that they're sensible
 
-Any HAR-producing tool can be used; e.g., 
-[hdrgrab](https://github.com/mnot/hdrgrab).
+Any HAR-producing tool can be used. For non-SSL traffic, 
+[hdrgrab](https://github.com/mnot/hdrgrab) is preferred, because it records
+the headers as they happen "on the wire".
 
 
 NOTE WELL

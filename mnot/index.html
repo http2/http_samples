@@ -79,6 +79,7 @@ function display_tsv(filename, title) {
 
   d3.tsv(filename, function(error, data) {
     var lines = d3.keys(data[0]).filter(function(key) { return key !== "num"; })
+    console.log(lines);
     color.domain(lines);
 
     var items = color.domain().map(function(name) {
@@ -161,9 +162,8 @@ function display_tsv(filename, title) {
 }
 
 d3.text("index.txt", function(error, data) {
-  console.log(data)
-  lines = data.split(" ");
-  for (item in lines) {
+  var lines = data.split(" ");
+  for (var item in lines) {
     var name = lines[item];
     display_tsv(name + '-req.tsv', name + ' Requests');
     display_tsv(name + '-res.tsv', name + ' Responses');    

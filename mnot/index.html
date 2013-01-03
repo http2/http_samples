@@ -80,7 +80,6 @@ function display_tsv(filename, title) {
 
   d3.tsv(filename, function(error, data) {
     var lines = d3.keys(data[0]).filter(function(key) { return key !== "num"; })
-    console.log(lines);
     color.domain(lines);
 
     var items = color.domain().map(function(name) {
@@ -168,6 +167,9 @@ d3.text("index.txt", function(error, data) {
     var name = lines[item];
     display_tsv(name + '-req.tsv', name + ' Requests');
     display_tsv(name + '-res.tsv', name + ' Responses');    
+  }
+  if (document.location.hash) {
+    document.location=document.location;
   }
 })
   

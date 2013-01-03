@@ -74,6 +74,7 @@ function display_tsv(filename, title) {
   var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
+      .attr("id", title)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 

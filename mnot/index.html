@@ -74,12 +74,13 @@ function display_tsv(filename, title) {
   var svg = d3.select("body").append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
-      .attr("id", title)
       .append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   d3.tsv(filename, function(error, data) {
-    var lines = d3.keys(data[0]).filter(function(key) { return key !== "num"; })
+    var lines = d3.keys(data[0]).filter(function(key) {
+      return ["num", "name"].indexOf(key) === -1;
+    })
     color.domain(lines);
 
     var items = color.domain().map(function(name) {
@@ -160,7 +161,6 @@ function display_tsv(filename, title) {
         .text(function(d) { return d.name; });
   });
 }
-
 d3.text("index.txt", function(error, data) {
   var lines = data.split(" ");
   for (var item in lines) {

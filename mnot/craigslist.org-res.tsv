@@ -1,34 +1,34 @@
-num	delta	http1	simple	spdy3
-1	118	170	122	132
-2	170	370	178	148
-3	136	370	146	89
-4	133	372	148	59
-5	92	378	118	59
-6	132	293	119	107
-7	180	467	279	126
-8	96	370	146	60
-9	89	377	129	41
-10	91	376	92	50
-11	86	378	94	44
-12	22	293	119	25
-13	113	367	189	59
-14	95	376	152	47
-15	88	377	93	46
-16	88	377	93	57
-17	87	378	94	54
-18	93	371	123	56
-19	93	376	128	57
-20	72	138	75	50
-21	14	138	40	25
-22	14	138	40	24
-23	14	138	40	24
-24	102	368	206	48
-25	93	371	117	49
-26	45	138	75	35
-27	36	138	40	37
-28	36	138	40	31
-29	35	138	40	24
-30	118	364	202	60
-31	87	364	93	49
-32	92	370	124	48
-33	98	370	146	49
+num	name	http1	spdy3	delta	simple
+1	craigslist.org	217	132	141	99
+2	craigslist.org	389	151	170	151
+3	craigslist.org	389	89	138	123
+4	craigslist.org	391	59	133	125
+5	craigslist.org	397	61	94	98
+6	craigslist.org	312	105	132	99
+7	craigslist.org	486	131	180	239
+8	craigslist.org	389	63	96	123
+9	craigslist.org	396	38	89	108
+10	craigslist.org	395	49	91	76
+11	craigslist.org	397	41	86	77
+12	craigslist.org	312	25	22	99
+13	craigslist.org	386	60	113	161
+14	craigslist.org	395	45	95	128
+15	craigslist.org	396	46	88	77
+16	craigslist.org	396	57	88	77
+17	craigslist.org	397	54	87	77
+18	craigslist.org	390	61	93	103
+19	craigslist.org	395	57	93	107
+20	craigslist.org	185	46	76	61
+21	craigslist.org	185	25	14	30
+22	craigslist.org	185	24	14	30
+23	craigslist.org	185	24	14	30
+24	craigslist.org	387	44	104	175
+25	craigslist.org	390	51	93	98
+26	craigslist.org	185	34	49	61
+27	craigslist.org	185	37	36	30
+28	craigslist.org	185	31	36	30
+29	craigslist.org	185	26	35	30
+30	craigslist.org	383	60	118	172
+31	craigslist.org	383	50	91	77
+32	craigslist.org	389	50	92	104
+33	craigslist.org	389	51	98	123

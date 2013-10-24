@@ -21,6 +21,9 @@ There are an absurd number of caveats to understand when using these traces.
  * They are not representative of all browsers
  * They are not representative of all users' interaction patterns
  * They may contain noise in the form of irrelevant requests
+ * They may contain invalid terms based on their specific ABNF grammar
+   * URIs may have improper/missing point-encoded characters e.g. `%[]{}|`
+   * Invalid headers e.g. `Date`, `ETag`, `Server`, `Via`
  * They are a snapshot of how a few Web sites operated at a given time, for 
    a given user
 
